@@ -1,0 +1,25 @@
+<app-h-inicio></app-h-inicio>
+<div id="center">
+    <div id="registro" class="registro-container">
+        <div>
+            <img id="img" src="./1.png" alt="">
+            <h2>Registro</h2>
+
+        </div>
+        
+        <label for="nombre">Nombre</label>
+        <input type="text" [(ngModel)]="datosRegistro.nombre" id="nombre" placeholder="Introduce tu nombre">
+    
+        <label for="correo">Correo</label>
+        <input type="text" [(ngModel)]="datosRegistro.correo" id="correo" placeholder="Introduce tu correo">
+    
+        <label for="password">Contraseña</label>
+        <input type="password" [(ngModel)]="datosRegistro.password" id="password" placeholder="Introduce tu contraseña">
+    
+        <label for="confirmarPassword">Confirmar Contraseña</label>
+        <input type="password" [(ngModel)]="datosRegistro.confirmarPassword" id="confirmarPassword" placeholder="Confirma tu contraseña">
+    
+        <button (click)="registrar()">Registrar</button>
+    </div>
+    
+</div>
