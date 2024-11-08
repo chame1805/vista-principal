@@ -30,7 +30,7 @@ export class ReservaComponent {
 
   reservar(): void {
     if (this.cantidad > this.asientosDisponibles) {
-      this.mensajeModal = 'La cantidad es superior a lo disponible.';
+      this.mensajeModal = 'La cantidad es superior a lo disponibles.';
       this.mostrarModal = true;
     } else {
       this.mensajeModal = '¿Estás seguro de que quieres reservar?';
