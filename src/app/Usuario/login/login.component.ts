@@ -9,9 +9,14 @@ import { Registro } from '../interface/registro';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  correo: string = '';
-  password: string = '';
-  mensaje: string = '';
+  registro: Registro= {
+
+    correo: '',
+    password:'',
+    nombre:'',
+    confirmarPassword: '',
+    
+  }
 
   constructor(private authService: AutentificacionService, private router: Router) {}
 
@@ -19,18 +24,19 @@ export class LoginComponent {
     const datosGuardados: Registro | null = this.authService.obtenerInfo();
 
     console.log('Datos guardados:', datosGuardados);
-    console.log('Correo ingresado:', this.correo);
-    console.log('Password ingresado:', this.password);
+    console.log('Correo ingresado:', this.registro.correo);
+    console.log('Password ingresado:', this.registro.password);
 
     if (
       datosGuardados &&
-      datosGuardados.correo?.trim() === this.correo.trim() &&
-      datosGuardados.password?.trim() === this.password.trim()
+      datosGuardados.correo?.trim() === this.registro.correo.trim() &&
+      datosGuardados.password?.trim() === this.registro.password.trim()
     ) {
-      this.mensaje = 'Inicio de sesión exitoso';
+     console.log('inicio de secion exitoso')
       this.router.navigate(['/rutas']);
     } else {
-      this.mensaje = 'Correo o contraseña incorrectos';
+      console.log('incorrecto el logeo');
+      
     }
   }
 }

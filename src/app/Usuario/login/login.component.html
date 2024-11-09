@@ -14,7 +14,7 @@
             <img id="img2" src="./3.png" alt="">
                     <div style="width: 100%;">
                         <label for="correo"></label>
-                        <input type="text" [(ngModel)]="correo" id="correo" placeholder="Introduce tu correo">
+                        <input type="text" [(ngModel)]="registro.correo" id="correo" placeholder="Introduce tu correo">
                     </div>
 
         </div>
@@ -22,13 +22,13 @@
             <img id="img3" src="./2.png" alt="">
             <div style="width: 100%;">
                 <label for="password"></label>
-                <input type="password" [(ngModel)]="password" id="password" placeholder="Introduce tu contraseña">
+                <input type="password" [(ngModel)]="registro.password" id="password" placeholder="Introduce tu contraseña">
             </div>
         </div>
 
-        <p> ----- <a routerLink="/registro"></a></p>
+        
         <button (click)="validar()">Iniciar Sesión</button>
         
-        <p>{{ mensaje }}</p>
+        
     </div>
 </div>

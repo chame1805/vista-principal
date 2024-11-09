@@ -13,7 +13,7 @@ export class RegistroRutaService {
 
   constructor() {}
 
-  // Método para agregar nueva información
+  // Método para agregar
   newInfo(nuevo: any): void {
     const valorActual = this.info.getValue();
     const nuevoValor = [...valorActual, nuevo];
@@ -21,7 +21,6 @@ export class RegistroRutaService {
     console.log('Información llegada:', nuevoValor);
   }
 
-  // Método para eliminar o editar información
   updateInfo(index: number, nuevoValor: any): void {
     const datos = this.info.getValue();
     if (index >= 0 && index < datos.length) {
@@ -34,17 +33,14 @@ export class RegistroRutaService {
     }
   }
 
-  // Método para obtener la información actual
   getEnvio(): any[] {
     return this.info.getValue();
   }
 
-  // Método para establecer la terminal seleccionada
   setTerminalSeleccionada(terminal: string): void {
     this.terminalSeleccionada.next(terminal);
   }
 
-  // Método para obtener la terminal seleccionada
   getTerminalSeleccionada(): string {
     return this.terminalSeleccionada.getValue();
   }

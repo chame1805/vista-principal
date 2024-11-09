@@ -10,6 +10,7 @@ import { CardHorarioComponent } from '../card-horario/card-horario.component';
 import { ReservaComponent } from '../reserva/reserva.component';
 import { HeaderComponent } from '../header/header.component';
 import { PagoComponent } from '../../pago/pago.component';
+import { MetodoPagoComponent } from '../../metodo-pago/metodo-pago.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PagoComponent } from '../../pago/pago.component';
     CardHorarioComponent,
     ReservaComponent,
     HeaderComponent,
-    PagoComponent
+    PagoComponent,
+    MetodoPagoComponent
   ],
   imports: [
     CommonModule,
@@ -31,6 +33,7 @@ import { PagoComponent } from '../../pago/pago.component';
   exports: [
     
     LoginComponent,
+    MetodoPagoComponent,
     HInicioComponent
   ]
 })

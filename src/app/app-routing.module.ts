@@ -7,6 +7,7 @@ import { HInicioComponent } from './h-inicio/h-inicio.component';
 import { HorariosComponent } from './Usuario/horarios/horarios.component';
 import { ReservaComponent } from './Usuario/reserva/reserva.component';
 import { PagoComponent } from './pago/pago.component';
+import { MetodoPagoComponent } from './metodo-pago/metodo-pago.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent }, 
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path:'h-inicio', component:HInicioComponent},
   {path: 'rutas', component:HorariosComponent},
   {path:'reserva', component:ReservaComponent},
-  {path: 'pago', component:PagoComponent}
+  {path: 'pago', component:PagoComponent},
+  {path: 'metodo', component:MetodoPagoComponent}
 ];
 
 @NgModule({

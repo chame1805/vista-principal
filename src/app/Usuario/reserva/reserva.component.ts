@@ -44,7 +44,7 @@ export class ReservaComponent {
     alert('Reserva confirmada.');
     this.mostrarModal = false;
     this.mostrarConfirmacion = false;
-    this.router.navigate(['/pago']); 
+    this.router.navigate(['/metodo']); 
   }
 
   cancelarReserva(): void {
