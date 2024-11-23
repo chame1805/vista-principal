@@ -44,4 +44,6 @@ export class RegistroRutaService {
   getTerminalSeleccionada(): string {
     return this.terminalSeleccionada.getValue();
   }
+
+  
 }

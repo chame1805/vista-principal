@@ -15,6 +15,7 @@ export class ReservaComponent {
   mensajeModal: string = '';
   mostrarConfirmacion: boolean = false;
   resultadoFin : number = 15
+  pasajeFin:number = 0;
 
   constructor(private router:Router){}
 
@@ -35,6 +36,10 @@ export class ReservaComponent {
     } else {
       this.mensajeModal = '¿Estás seguro de que quieres reservar?';
       this.mostrarConfirmacion = true;
+      this.pasajeFin = this.cantidad*20;
+      console.log('pasaje a pagar', this.pasajeFin);
+      
+      
       this.resultadoFin = this.asientosDisponibles - this.cantidad
       console.log('respuesta final', this.resultadoFin);
     }

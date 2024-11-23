@@ -1,0 +1,90 @@
+/* Contenedor de la imagen que ocupa toda la pantalla */
+.imagen-fondo {
+    position: relative; /* Para posicionar elementos dentro del contenedor */
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura del viewport */
+    overflow: hidden; /* Evita que elementos sobresalgan */
+}
+
+.imagen-fondo img {
+    width: 100%;
+    height: 100%; /* Asegura que ocupe toda la pantalla */
+    object-fit: cover; /* Mantiene la proporción de la imagen mientras cubre el área */
+}
+
+/* Botón "Chofer" */
+#chofer {
+    position: absolute; /* Permite posicionarlo dentro del contenedor */
+    top: 20px; /* Espaciado desde la parte superior */
+    left: 20px; /* Espaciado desde el borde izquierdo */
+    background-color: rgba(0, 0, 0, 0.0); /* Fondo blanco semitransparente */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10; 
+    width: 25%;
+    font-size: 30px;
+}
+
+/* Título principal */
+.imagen-fondo h1 {
+    position: absolute;
+    top: 30%; /* Ajusta la posición vertical del título */
+    left: 200px;
+    color: white;
+    font-size: 70px;
+    margin: 0;
+}
+
+/* Subtítulos */
+.imagen-fondo h3 {
+    position: absolute;
+    top: 42%;
+    left: 200px;
+    color: white;
+    font-size: 40px;
+    margin: 0;
+}
+
+.imagen-fondo h2 {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+/* Botón "Entrar" */
+/* Botón "Entrar" */
+#entrar {
+    position: absolute; /* Posiciona el botón dentro del contenedor */
+    top: 58%; /* Ajusta la posición para que quede debajo de "Ruta Vía Terán" */
+    left: 200px; /* Alineado con los títulos */
+    background-color: white; /* Fondo negro semitransparente */
+    color:black;
+    width: 25%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px; /* Espaciado interno */
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10; /* Asegura que esté sobre la imagen */
+    transition: background-color 0.3s ease; /* Suaviza el efecto de hover */
+}
+
+/* Efecto hover para el botón "Entrar" */
+#entrar:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo cambia a blanco */
+    color: black; /* Texto negro para contraste */
+}
+
+
+/* Para garantizar márgenes y padding en todos los elementos */
+body, html {
+    margin: 0;
+    padding: 0;
+}

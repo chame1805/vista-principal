@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AutentificacionModule } from "./Usuario/autentificacion/autentificacion.module";
+import { PrincipalComponent } from './principal/principal.component';
 
 
 
@@ -11,6 +12,7 @@ import { AutentificacionModule } from "./Usuario/autentificacion/autentificacion
   declarations: [
     AppComponent,
     HomeComponent,
+    PrincipalComponent,
  
   ],
   imports: [
